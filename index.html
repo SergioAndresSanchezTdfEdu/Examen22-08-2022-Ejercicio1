@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Examen 22-08-2022 - Ejercicio 1</title>
+    <style>
+        .enlinea{
+           display: inline-block; 
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Quienes Somos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Nuestra Empresa</a></li>
+                  <li><a class="dropdown-item" href="#">Nuestros Cleintes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Nuestros Locales Comerciales</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- CARROUSEL -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/imagen0.jpg" class="d-block w-100" alt="Cartel Ushuaia">
+          </div>
+          <div class="carousel-item">
+            <img src="image/imagen1.jpg" class="d-block w-100" alt="Bahía de Ushuaia">
+          </div>
+          <div class="carousel-item">
+            <img src="image/imagen2.jpg" class="d-block w-100" alt="Vista Aérea">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    <!-- CARD -->
+    <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="image/imagen0.jpg" class="card-img-top" alt="Cartel Ushuaia">
+              <h5 class="card-title">Cartel Ushuaia</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, saepe qui vel odio, laboriosam error perspiciatis animi aut nisi et laborum eligendi blanditiis delectus dolorem numquam labore asperiores. Ullam, soluta.</p>
+              <a href="#" class="btn btn-primary">Leer más ...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="image/imagen1.jpg" class="card-img-top" alt="Bahía de Ushuaia">
+              <h5 class="card-title">Bahía de Ushuaia</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti quos, neque excepturi natus enim veritatis voluptatum veniam? Accusamus dolorum voluptates quam nostrum, eaque, molestiae sapiente deleniti, doloremque soluta sit dolor.</p>
+              <a href="#" class="btn btn-primary">Leer más ...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="image/imagen2.jpg" class="card-img-top" alt="Vista Aérea">
+              <h5 class="card-title">Vista Aérea</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur accusamus, facilis cupiditate quasi neque quis totam eos odit magnam! Vel accusantium molestiae non corrupti, soluta ratione natus cupiditate nobis libero.</p>
+              <a href="#" class="btn btn-primary">Leer más ...</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- FORMULARO -->
+    <p>Formulario de Contacto</p>
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Complete con su correo.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Text Area</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <input type="file" class="form-control" aria-label="file example" required>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Mi JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
